@@ -1,4 +1,4 @@
-@media only screen and (max-width: 1500px){
+@media only screen and (max-width: 1400px){
     
     *{
         margin: 0px;
@@ -8,7 +8,7 @@
     .body{
         background: #393939e4;
         width: 100vw;
-        
+            
     }
     
     .first{
@@ -45,6 +45,7 @@
         width: 100vw;
         position: fixed;
         padding: 4% 0%;
+        font-size: 4vw;
         justify-content: space-between;
     }
     
@@ -71,7 +72,7 @@
     }
     
    .menu{
-        
+        font-size: 4vw;
     }
     
     
@@ -94,14 +95,16 @@
         z-index: 0;
         text-transform: uppercase;
         font-size: 17vw;
-        padding: 20% 0% 22% 0%;
+        padding: 20% 0% 21% 0%;
         font-family: 'Oswald', sans-serif;s-serif;
         box-shadow: inset 0px -10px 20px #000000b7;
+        transition: all 2s;
         
     }
     
     .welcome:hover{
         color: white;
+        
     }
         
         
@@ -115,36 +118,245 @@
     }
     
     
-    .second{
-        z-index: 3;
+    .Second{
+        z-index: 5;
         width: 100vw;
         height: 100vh;
-        background: lightblue;
+        background: #84AFB3;
+        box-shadow: inset 0px 0px 30px #000000af;
         
     }
     
     .SecondText{
         position: relative;
-        top: 26vh;
+        top: 15vh;
         padding-left: 5vw;
+        border: 1px solid blue; 
+        
     }
     
     .SecondOne{
         padding: 2vh 0vh;
+        font-size: 1.7vh;
+        color: #00000093;
     }
     
      .SecondTwo{
         padding: 0vh 0vh;
         font-size: 8vw;
+        font-family: 'Roboto Slab', serif;
+        color: transparent;
+       -webkit-text-stroke: 2px transporent;
+        letter-spacing: 4px;
+        animation:  typing 3.5s 5s steps(40, end) forwards,  blink-caret .75s 5s step-end 6;
     }
   
-     .SecondThree{
+     
+    
+    
+    /* text animation */
+    
+    .SecondTwo{
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid transparent;
+  white-space: nowrap; 
+
+  
+  
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { 
+  width: 0%;
+  -webkit-text-stroke: 2px black;
+   }
+   
+  to { 
+  width: 80vw;
+  -webkit-text-stroke: 2px black;
+   }
+}
+
+@keyframes typingTwo {
+  from { 
+  width: 0%;
+  color: black;
+   }
+   
+  to { 
+  width: 80vw;
+  color: black;
+   }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: black; }
+}
+    
+    
+    
+    
+    
+    
+    
+    
+    .SecondThree{
         padding: 1vh 0vh;
         font-size: 5vw;
+        color: black;
+        color: transparent;
+        animation:  typingTwo 3.5s 10s steps(40, end) forwards, blink-caret .75s 10s step-end 6;
+        overflow: hidden; /* Ensures the content is not revealed until the animation */
+       border-right: .15em solid transparent;
+       white-space: nowrap;
+       ont-family: 'Roboto Slab', serif;
+     /*   -webkit-text-stroke: 2px black; */
+
+
+
+        
+        
+    }
+    
+    .Second .line{
+        width: 0vw;
+        height: 3px;
+        border-radius: 10px;
+        background: red;
+        margin-top: 1vh;
+        animation: LineAnimation 10s 10s 2  alternate ;
+        animation-timing-function: linear;
+    }
+    
+    
+   @keyframes LineAnimation {
+  0%   {
+      width: 0vw;
+  }
+  25%  {
+      width: 20vw;
+  }
+  50%  {
+      width: 35vw;
+  }
+  75%  {
+      width: 50vw;
+  }
+  100% {
+      width: 70vw;
+  }
+}
+    
+    
+    
+    
+    .Second .box{
+        position: relative;
+        top: 25vh;
+        left: 38vw;
+        width: 51vw;
+        height: 43vh;
+        border: 1px solid red;
+        box-shadow: 0px 0px 100px #0000009a;
     }
     
     
     
+    
+    
+    
+    
+    
+    .Third{
+        z-index: 5;
+        width: 100vw;
+        min-height: 100vh;
+        background: red;
+        
+    }
+    
+    .Button{
+        display: flex;
+        justify-content: center;
+        border: 1px solid black;
+        
+        
+    }
+    .ThirdText{
+        margin: 5vh 0vw 5vh 0vw;
+        padding: 2vh;
+        font-family: 'Kalnia', serif;
+        /* -webkit-text-stroke: 1px white; */
+        font-size: 3vw;
+        color: white;
+    }
+    
+    #BUtton{
+        margin: 5vh 0vw 5vh 0vw;
+        padding: 2vh 5vw 2vh 5vw;
+        background: transparent;
+        border: 1px solid white;
+        border-radius: 20px;
+        font-size: 3vw;
+        color: white;
+    }
+    
+    .ThirdRow{
+        border: 1px solid black;
+        
+        margin: 0% 5%;
+        border: 1px solid black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    
+    .ganpatOne{
+        margin: 0vh 0vw 5vh 0vw;
+        width: 90vw;
+        height: 30vh;
+        border: 1px solid black;
+        
+    }
+    
+    .ganpatTwo{
+        margin: 0vh 0vw 5vh 0vw;
+        width: 90vw;
+        height: 30vh;
+        border: 1px solid black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .ThirdRow a{
+          font-size: 10vw;
+          text-transform: uppercase;
+          text-decoration: none;
+          color: black;
+    }
+    
+    
+    .ganpatOne{
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%; /* Aspect ratio 16:9 */
+            overflow: hidden;
+            margin-top: 20px; /* Adjust as needed */
+        }
+
+        iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
     
     
     
@@ -186,13 +398,12 @@
     padding: 1vh 0vw 1vh 0vw;
 }
 
-.footer i {
-    width: auto;
-    margin: 3% 1%;
-    padding: 2% 2%;
+.footer i{
+    margin: 6% 1%;
+    padding: 1vh 2vw;
     color: gray;
     text-decoration: none;
-    font-size: 4%;
+    font-size: 2vh;
     transition: 1s;
 }
 
@@ -202,7 +413,7 @@
     width: 0;
     position: relative;
     left: -25%;
-    margin-top: 1%;
+    margin-top: 1vh;
     height: 2px;
     background: white;
     transition: width 0.5s;
@@ -228,7 +439,7 @@
     text-decoration: none;
     position: relative;
     left: 10%;
-    font-size: 3%;
+    font-size: 1vh;
 }
 
 .rowTwo a:hover {
