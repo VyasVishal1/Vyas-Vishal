@@ -3,6 +3,9 @@
     *{
         margin: 0px;
         padding: 0px;
+        -webkit-user-select: none; 
+        -ms-user-select: none; 
+        user-select: none;
     }
     
     .body{
@@ -185,7 +188,7 @@
    }
    
   to { 
-  width: 49vw;
+  width: 50vw;
   color: black;
    }
 }
@@ -212,7 +215,7 @@
         overflow: hidden; /* Ensures the content is not revealed until the animation */
        border-right: .15em solid transparent;
        white-space: nowrap;
-       font-family: 'Roboto Slab', serif;
+       ont-family: 'Roboto Slab', serif;
      /*   -webkit-text-stroke: 2px black; */
 
 
@@ -225,10 +228,32 @@
         width: 0vw;
         height: 3px;
         border-radius: 10px;
-        background: red;
+        background: black;
         margin-top: 1vh;
-        animation: LineAnimation 10s 10s 2  alternate ;
+        animation: LineAnimation 10s 20s 1 alternate forwards;
         animation-timing-function: linear;
+    }
+    
+    
+   .SecondText  .swipertwo {
+      width: 100%;
+      height: 100%;
+    }
+
+   .SecondText .swiper-slidetwo {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .SecondText .swiper-slidetwo img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
     }
     
     
@@ -246,7 +271,7 @@
       width: 50vw;
   }
   100% {
-      width: 70vw;
+      width: 90vw;
   }
 }
     
@@ -255,13 +280,81 @@
     
     .Second .box{
         position: relative;
-        top: 25vh;
-        left: 38vw;
-        width: 51vw;
+        top: 20vh;
+        display: flex;
+        
+        overflow: hidden;
+     
+        width: 100%;
         height: 43vh;
-        border: 1px solid red;
-        box-shadow: 0px 0px 100px #0000009a;
+        
+        
     }
+    
+    
+    
+    
+    
+    
+     .swiper {
+      width: 50%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 1px;
+      font-size: 1vw;
+      font-weight: bold;
+      color: #fff;
+      
+      box-shadow: 0px 0px 20px #0000009e;
+    }
+
+     .swiper-slide:nth-child(1n) {
+      background-color: rgb(206, 17, 17);
+    }
+
+    .swiper-slide:nth-child(2n) {
+      background-color: rgb(0, 140, 255);
+    }
+
+    .swiper-slide:nth-child(3n) {
+      background-color: rgb(10, 184, 111);
+    }
+
+    .swiper-slide:nth-child(4n) {
+      background-color: rgb(211, 122, 7);
+    }
+
+    .swiper-slide:nth-child(5n) {
+      background-color: rgb(118, 163, 12);
+    }
+
+    .swiper-slide:nth-child(6n) {
+      background-color: rgb(180, 10, 47);
+    }
+
+    .swiper-slide:nth-child(7n) {
+      background-color: rgb(35, 99, 19);
+    }
+
+    .swiper-slide:nth-child(8n) {
+      background-color: rgb(0, 68, 255);
+    }
+
+    .swiper-slide:nth-child(9n) {
+      background-color: rgb(218, 12, 218);
+    }
+
+    .swiper-slide:nth-child(10n) {
+      background-color: rgb(54, 94, 77);
+    }  
+     
+    
+    
     
     
     
@@ -281,7 +374,7 @@
     .Button{
         display: flex;
         justify-content: center;
-        border: 1px solid black;
+        
         
         
     }
@@ -316,9 +409,9 @@
     }
     
     .ganpatOne{
-        margin: 0vh 0vw 5vh 0vw;
+        margin: 0vh 0vw 0vh 0vw;
         width: 90vw;
-        height: 30vh;
+        height: 70vh;
         border: 1px solid black;
         
     }
@@ -333,13 +426,39 @@
         align-items: center;
     }
     
-    .ThirdRow a{
+    .ganpatTwo a{
           font-size: 10vw;
           text-transform: uppercase;
           text-decoration: none;
           color: black;
     }
     
+    .open{
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    
+    #open{
+        text-decoration: none;
+        color: white;
+        padding: 3% 7%;
+        border: 1px solid black;
+        margin: 5vh;
+        font-size: 3vw;
+        border-radius: 10px;
+        background: black;
+        transition: all .5s;
+        text-transform: uppercase;
+    }
+    
+    #open:hover{
+        background: white;
+        color: black;
+    }
     
     .ganpatOne{
             position: relative;
@@ -456,6 +575,40 @@
     
     
     
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+        
+
+
     
     
     
